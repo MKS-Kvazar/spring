@@ -1,6 +1,5 @@
 package mks;
 
-
 import spring.Autowired;
 import spring.Component;
 import spring.Qualifier;
@@ -10,12 +9,12 @@ import java.util.logging.Logger;
 @Component
 public class Runner {
     @Autowired
-    TestOne testOne;
+    private TestOne testOne;
     @Autowired
-    TestTwo testTwo;
+    private TestTwo testTwo;
     @Autowired
     @Qualifier("testFour")
-    TestThree testThree;
+    private TestThree testThree;
 
     private static final Logger log = Logger.getLogger(Runner.class.getName());
 
